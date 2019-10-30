@@ -1,5 +1,14 @@
+"""Compute a path from boundary to boundary in a quad mesh
+Parameters
+----------
+mesh [Mesh] - Quad Mesh Input
+starting_vertex [int] - Vertice key of the starting point, 
+    must be on a valid edge and not at corner.
+Returns
+-------
+[list] - List of Vertice Keys
 
-
+"""
 def boundary_to_boundary_path(mesh, starting_vertex):
     # Large loop
     path = [starting_vertex]
